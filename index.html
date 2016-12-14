@@ -3,70 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    <title></title>
-    <!-- <link rel="stylesheet" href="vendor/css/meyersReset.css"> -->
+    <link rel="stylesheet" href="vendor/css/meyersReset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/icons.css">
   </head>
   <body>
-    <div class="page">
-        <header>
-          <nav>
-            <div class="hamburger">
-              <img src="img/hamburger-icon-button0.png" alt="menu">
+      <header>
+        <div class="icon-menu clearfix">
+          <nav class=" clearfix">
+            <div class=".icon-menu">
             </div>
-            <ul class"menu-icons">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#">BLOGG</a></li>
+            <ul class"menu-icons pull-left">
+              <li class="nav-menu-item" data-content="top-of-page"><a href="#" class="icon-home">HOME</a></li>
+              <liclass="nav-menu-item" data-content="bio">><a href="#" class="icon-profile">ABOUT</a></li>
+              <liclass="nav-menu-item" data-content="portfolio">><a href="#" class="icon-books">PORTFOLIO</a></li>
+              <liclass="nav-menu-item" data-content="contact">><a href="#" class="icon-envelop">CONTACT</a></li>
+              <liclass="nav-menu-item" data-content="CV">><a href="#"class="icon-earth">RESUME / CV</a></li>
             </ul>
           </nav>
-          <div class="logo">
-            <img src="img/liam-d.jpg" alt="WDM">
-            <div class="word-bubble">
-              <ul>
-                <li><a href="#">GITHUB</a></li>
-                <li><a href="#">TUMBLR</a></li>
-                <li><a href="#">FB</a></li>
-              </ul>
-            </div>
-          </div>
-        </header>
-        <main>
-          <section class="intro">
-            <img src="" alt="">
+          <ul class="social pull-right">
+            <li><a href="#" class="icon-github" alt="Visit My GitHub"></a></li>
+            <li><a href="#" class="icon-tumblr2" alt="Visit My Tumblr"></a></li>
+            <li><a href="#" class="icon-facebook" alt="Visit My FaceBook"></a></li>
+          </ul>
+        </div>
+      </header>
+          <main class="page">
+          <div class="intro">
+              <img src="img/liam-d.jpg" alt="WDM" class="headshot">
             <h1>William Douglas Madden</h1>
             <p>Student at Code Fellows</p>
-          </section>
-          <div class="portfolio">
-            <section class="banner">
-              <h1>Portfolio</h1>
-            </section>
+          </div>
+          <div class="about-banner">
+          about
+          </div>
+          <div class="about">
 
-            <section>
-              <h2>project one</h2>
-            </section>
-            <section>
-              <h2> project two</h2>
-            </section>
-            <section>
-              <h2>project three</h2>
-            </section>
+          </div>
+          <div class="portfolio-banner">
+            <h1>Portfolio</h1>
+          </div>
+          <div class="portfolio">
+            <section id="projects">
+              <article class="template" data-category="category">
+                <header>
+                  <h1>Title</h1>
+                  <a href="#" target="_blank" alt="title"><img src="screenshot" alt="category"></a>
+                  <div class="byline">
+                    <section class="colaborators"></section>
+                    <section class="dates">
+                      deplooyed: <time pubdate datetime="2000-01-01">Date of Deploy</time>
+                      <br>Live for <var></var> days.
+                    </section>
+                  </div>
+                </header>
+              <section class="description"></section>
+            </article>
+          </section>
+
           </div>
         </main>
-        <footer>
+        <footer class="clearfix">
           <section class="copyright">
             William Doglas Madden &copy
           </section>
-          <div class="fixedmail">
-              <a href="#"><img src="" alt="CONTACT ME"></a>
+          <div class="fix pull-right icon-envelop">
           </div>
         </footer>
     </div>
   </body>
-  <!-- <script type="text/javascript"> -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts/projects.js"></script>
+<script type="text/javascript" src="scripts/portfolio.js"></script>
 
-  </script>
 </html>
