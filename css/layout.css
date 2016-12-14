@@ -2,13 +2,22 @@ nav li{
   display: inline;
   margin:auto;
 }
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .page{
-
-}
-.hamburger{
-
-}
-.menu-icons{
 
 }
 
