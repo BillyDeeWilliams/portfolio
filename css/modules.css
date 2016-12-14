@@ -1,11 +1,4 @@
-.site-header {
-  background: #FFEAAA;
-}
 
-.heading-group-h1 {
-  float: left;
-  padding: 0 0 .2em 1em;
-}
 
 .icon-menu {
   font-size: 3em;
@@ -28,10 +21,7 @@
 }
 
 .main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
+
 }
 
 #filters {
@@ -57,7 +47,7 @@
 
 /**********
 * DESKTOP *
-***********/
+************/
 @media only screen and (min-width: 640px) {
   .icon-menu {
     display: none;
