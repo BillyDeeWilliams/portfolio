@@ -1,7 +1,7 @@
 
 
 .icon-menu {
-  font-size: 3em;
+  font-size: .8em;
   float: right;
 }
 
@@ -33,13 +33,8 @@
   display: none;
 }
 
-.byline {
-  color: #777;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
+.acknowledgements{
+  
 }
 
 
