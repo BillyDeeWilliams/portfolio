@@ -36,8 +36,20 @@ nav:hover img{
 .mobile-menu img{
   display: none;
 }
-
-
+nav{
+  display: inline;
+}
+nav li{
+    display: inline;
+    position: relative;
+}
+nav:hover li {
+    display: inline;
+    position: relative;
+}
+nav:hover img{
+  display: none;
+}
 
 
 
