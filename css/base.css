@@ -1,3 +1,14 @@
+
+
+
+/*******************
+*  MOBILE STYLES   *
+*******************/
+
+/*GLOBAL STYLES
+=======================================*/
+
+
 img {
   object-fit: contain;
 }
@@ -5,7 +16,7 @@ img {
 body {
   line-height: 1.5;
   font-size: 100%;
-  color: white;
+
 }
 
 section {
@@ -34,4 +45,16 @@ a:hover, a:focus {
 
 a:visited {
   color: #AAA;
+}
+
+
+
+/*******************
+*  DESKTOP STYLES   *
+*******************/
+/*larger than 640px*/
+@media only screen and (min-width: 640px){
+
+
+
 }

@@ -1,18 +1,8 @@
 
 
-.icon-menu {
-  font-size: .8em;
-  float: right;
-}
-.icon-menu{
-  display: inline-block;
-}
-.main-nav {
-  padding: 0.1em;
-}
 
 .main-nav ul {
-  display: none;
+  display: block;
   padding: 0;
   list-style: none;
   clear: both;
@@ -40,11 +30,11 @@
 }
 
 
-/*larger than 640 dont do the drop down*/
+/*******************
+*  DESKTOP STYLES   *
+*******************/
+/*larger than 640px*/
 
-/**********
-* DESKTOP *
-************/
 @media only screen and (min-width: 640px) {
 
 

@@ -1,15 +1,3 @@
-nav li{
-  display: inline;
-  margin:auto;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
 
 .clearfix::after {
   content: "";
@@ -17,18 +5,28 @@ nav li{
   clear: both;
 }
 
-.page{
 
+/*******************
+*  MOBILE STYLES   *
+*******************/
+
+/*.pull-left {
+  float: left;
+}*/
+
+/*.pull-right {
+  float: right;
+}*/
+
+.icon-menu {
+  font-size: .8em;
+  float: right;
 }
-
-.logo{
-
+.icon-menu{
+  display: inline-block;
 }
-.wored_bubble{
-
-}
-.portfolio{
-
+.main-nav {
+  padding: 0.1em;
 }
 
 section .portfolio {
@@ -37,18 +35,26 @@ section .portfolio {
   heigh: 200px;
 }
 
-.banner{
-
-
+h1{
+  background-color: blue;
 }
-
-
-
-
-@media only screen and (min-width: 768px){ /*anything larger than 768*/
 
 nav li{
   display: block;
+  margin:auto;
+}
+
+
+/*larger than 640 dont do the drop down*/
+
+/*******************
+*  DESKTOP STYLES   *
+*******************/
+/*larger than 640px*/
+@media only screen and (min-width: 640px){
+
+nav li{
+  display: inline;
 }
 
 .portfolio{
