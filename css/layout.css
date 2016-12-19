@@ -37,7 +37,9 @@ section .portfolio {
 
 h1{
   background-color: blue;
+  font-family: felix-tilting, ultima, times;
 }
+
 
 nav li{
   display: block;
