@@ -17,11 +17,14 @@
 
 nav li{
     display: none;
-    position: absolute;
+    position: relative;
 }
 nav:hover li {
     display: block;
     position: relative;
+}
+nav:hover img{
+  display: none;
 }
 /*******************
 *  DESKTOP STYLES   *

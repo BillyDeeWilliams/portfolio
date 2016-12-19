@@ -199,6 +199,11 @@
 }
 
 
+/*******************
+*  DESKTOP STYLES   *
+*******************/
+/*larger than 640px*/
+
 @media only screen and (min-width: 640px){
 
 
@@ -209,81 +214,18 @@
 	.icon-home::before {
 	  content: "";
 	}
-	.icon-pencil::before {
-	  content: "\e905";
-	}
+
 	.icon-books::before {
-	  content: "\e920";
-	}
-	.icon-profile::before {
-	  content: "\e923";
-	}
-	.icon-cart::before {
-	  content: "\e93a";
-	}
-	.icon-coin-dollar::before {
-	  content: "\e93b";
-	}
-	.icon-coin-euro::before {
-	  content: "\e93c";
-	}
-	.icon-coin-pound::before {
-	  content: "\e93d";
-	}
-	.icon-coin-yen::before {
-	  content: "\e93e";
-	}
-	.icon-credit-card::before {
-	  content: "\e93f";
-	}
-	.icon-envelop::before {
-	  content: "\e945";
-	}
-	.icon-pushpin::before {
-	  content: "\e946";
-	}
-	.icon-location::before {
-	  content: "\e947";
-	}
-	.icon-location2::before {
-	  content: "\e948";
-	}
-	.icon-calendar::before {
-	  content: "\e953";
-	}
-	.icon-printer::before {
-	  content: "\e954";
-	}
-	.icon-fire::before {
-	  content: "\e9a9";
-	}
-	.icon-lab::before {
-	  content: "\e9aa";
-	}
-	.icon-bin::before {
-	  content: "\e9ac";
-	}
-	.icon-bin2::before {
-	  content: "\e9ad";
-	}
-	.icon-power::before {
-	  content: "\e9b5";
-	}
-	.icon-switch::before {
-	  content: "\e9b6";
+	  content: "";
 	}
 
-	.icon-menu2::before {
-	  content: "\e9be";
+	.icon-envelop::before {
+	  content: "";
 	}
-	.icon-menu3::before {
-	  content: "\e9bf";
-	}
-	.icon-menu4::before {
-	  content: "\e9c0";
-	}
+	
+
 	.icon-earth::before {
-	  content: "\e9ca";
+	  content: "";
 	}
 	.icon-heart::before {
 	  content: "\e9da";
