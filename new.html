@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/icons.css">
-        <link rel="stylesheet" href="vendor/css/normalize.css">
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <script type="text/text/x-handlebars-template" id="project-template">
+    <div id="projects" class="" data-category={{category}}>
+      <a href="{{url}}" target="_blank" alt="{{title}}"><img src="{{screenshot}}" alt="{{category}}"></a>
+      <p class="live pull-right">Live for {{daysago}}<br></p>
+      <h1>{{title}}</h1>
+      <div class="byline">
+        <ul>
+          <li>DEPLOYED ON~ <time>{{deployedOn}}</time></li>
+          <li class="colaborators">Team Members~ {{colaborators}}</li>
+          <li>MY ROLL~ <em>{{teamMember}}</em></li>
+        </ul>
+      </div>
+      <div class="description">
+        {{{description}}}
+      </div>
+
+    </div></script>
   </head>
   <body>
 
@@ -23,22 +40,23 @@
 
 
 
+          <section data-content="home" id="tab-content">
+            <a href="#about" alt="About William" data-content="about"></a><img src="img/profile.png" alt="about" class="headshot">
 
-          <section data-content="front-page">
-            <a href="#about" alt="About William" data-content="short-bio"></a><img src="img/profile.png" alt="WDM" class="headshot">
-
-            <nav class"main-nav pull-right">
+            <nav class"main-nav">
 
               <ul class"">
-               <li class="nav-menu-item" data-content="home"><a href="#" class="icon-home">HOME</a></li>
-               <li class="nav-menu-item" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
-               <li class="nav-menu-item" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
-               <li class="nav-menu-item" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-item tab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
               </ul>
               <div class="mobile-menu">
                 <img src="img/menu.png" alt="where to?">
               </div>
             </nav>
+            <section>
+
 
             <h1 id="William-Madden">William Douglas Madden</h1>
             <p>Student at Code Fellows</p>
@@ -50,12 +68,37 @@
             </ul>
           </section>
 
-          <section data-content="about"> <!-- template -->
+          <section id="about" class="tab-content"> <!-- template -->
+            <nav class"main-nav">
+
+              <ul class"">
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-item tab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+
             <h1>About</h1>
             <p>about William Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </section>
 
-          <section data-conten="portfolio"> <!-- template -->
+          <section id="portfolio" class="tab-content"> <!-- template -->
+            <nav class"main-nav">
+
+              <ul class"">
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-item tab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
             <div class="portfolio-banner">
               <h1>Portfolio</h1>
             </div>
@@ -79,11 +122,33 @@
             </div>
           </section>
 
-          <section data-content="resume"> <!-- template -->
+          <section id="resume" class="tab-content">
+            <nav class"main-nav">
 
+              <ul class"">
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-item tab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
           </section>
-          <section data-content="contact-form"> <!-- template -->
+          <section id="contact" class=".tab-content">
+            <nav class"main-nav">
 
+              <ul class"">
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-item tab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
           </section>
 
         </main>
@@ -100,8 +165,14 @@
 
         </footer>
   </body>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+  <!-- Vendor Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+  <!-- Model Files -->
 <script type="text/javascript" src="scripts/projects.js"></script>
-<script type="text/javascript" src="scripts/portfolio.js"></script>
+<!-- <script type="text/javascript" src="scripts/portfolio.js"></script> -->
+<script type="text/javascript" src="scripts/portfolioView.js"></script>
 
 </html>
