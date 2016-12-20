@@ -1,6 +1,8 @@
-nav li{
-  display: inline;
-  margin:auto;
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .pull-left {
@@ -11,24 +13,29 @@ nav li{
   float: right;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*******************
+*  MOBILE STYLES   *
+*******************/
 
-.page{
-
-}
-
-.logo{
+img{
+  display: inline-block;
+  position: relative;
+  padding-left: 75px;
 
 }
-.wored_bubble{
-
+header{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: lightblue;
+  border-bottom: thin solid black;
 }
-.portfolio{
+h1{
+  border-bottom: 1px solid black;
+}
 
+main{
+  position: relative;
 }
 
 section .portfolio {
@@ -37,18 +44,44 @@ section .portfolio {
   heigh: 200px;
 }
 
-.banner{
-
-
+h1{
+  background-color: blue;
+  font-family: felix-tilting, ultima, times;
 }
+.mobile-menu{
+  position: relative;;
+}
+.nav-menu-item a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nav-menu-item a:hover {background-color: #f1f1f1}
 
-
-
-
-@media only screen and (min-width: 768px){ /*anything larger than 768*/
+.social li{
+  display: inline;
+  style: none;
+  padding: 20px;
+  font-size: 3em;
+}
+.social{
+    justify-content: center;
+}
+/*******************
+*  DESKTOP STYLES   *
+*******************/
+/*larger than 640px*/
+@media only screen and (min-width: 640px){
 
 nav li{
-  display: block;
+  display: inline;
+}
+.nav-menu-item a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
 }
 
 .portfolio{
