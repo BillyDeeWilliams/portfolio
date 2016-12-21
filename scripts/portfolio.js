@@ -2,9 +2,9 @@
 var projects = [];
 
 function Project (opts) {
-  for (key in opts) {
-    this[key] = opts[key];
-  }
+  // for (key in opts) {
+  //   this[key] = opts[key];
+  // }
 };
 
 Project.prototype.toHtml = function() {
