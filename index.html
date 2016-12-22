@@ -3,80 +3,177 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    <title></title>
-    <link rel="stylesheet" href="vendor/css/meyersReset.css">
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <script type="text/text/x-handlebars-template" id="project-template">
+    <div id="projects" class="" data-category={{category}}>
+      <a href="{{url}}" target="_blank" alt="{{title}}"><img src="{{screenshot}}" alt="{{category}}"></a>
+      <p class="live pull-right">Live for {{daysago}}<br></p>
+      <h1>{{title}}</h1>
+      <div class="byline">
+        <ul>
+          <li>DEPLOYED ON~ <time>{{deployedOn}}</time></li>
+          <li class="colaborators">Team Members~ {{colaborators}}</li>
+          <li>MY ROLL~ <em>{{teamMember}}</em></li>
+        </ul>
+      </div>
+      <div class="description">
+        {{{description}}}
+      </div>
+
+    </div></script>
   </head>
   <body>
-      <header class="clearfix">
-        <div class="main-nav">
-          <div class=".icon-menu ">
-          </div>
-          <nav >
 
-            <ul class"clearfix">
-              <li class="nav-menu-item" data-content="top-of-page"><a href="#" class="icon-home">HOME</a></li>
-              <liclass="nav-menu-item" data-content="bio">><a href="#" class="icon-profile">ABOUT</a></li>
-              <liclass="nav-menu-item" data-content="portfolio">><a href="#" class="icon-books">PORTFOLIO</a></li>
-              <liclass="nav-menu-item" data-content="contact">><a href="#" class="icon-envelop">CONTACT</a></li>
-              <liclass="nav-menu-item" data-content="CV">><a href="#"class="icon-earth">RESUME / CV</a></li>
-            </ul>
-          </nav>
-          <ul class="social clearfix pull-right">
-            <li><a href="#" class="icon-github" alt="Visit My GitHub"></a></li>
-            <li><a href="#" class="icon-tumblr2" alt="Visit My Tumblr"></a></li>
-            <li><a href="#" class="icon-facebook" alt="Visit My FaceBook"></a></li>
-          </ul>
+      <header class="">
+
+        <div class="contact pull-right icon-envelop">
         </div>
-      </header>
+
+        </header>
+
           <main class="page">
-          <div class="intro">
-              <img src="img/profile.png" alt="WDM" class="headshot">
-            <h1>William Douglas Madden</h1>
+
+
+
+          <section id="home" class="tab-content">
+            <a href="#about" alt="About William" data-content="about"></a><img src="img/profile.png" alt="about" class="headshot">
+
+            <nav class="main-nav">
+
+              <ul>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-itemtab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+            <div>
+
+
+            <h1 id="William-Madden">William Douglas Madden</h1>
             <p>Student at Code Fellows</p>
-          </div>
-          <div class="about-banner">
-          about
-          </div>
-          <div class="about">
 
+            <ul class="social" >
+              <li><a href="#" class="icon-github" alt="Visit My GitHub"></a></li>
+              <li><a href="#" class="icon-tumblr2" alt="Visit My Tumblr"></a></li>
+              <li><a href="#" class="icon-facebook" alt="Visit My FaceBook"></a></li>
+            </ul>
           </div>
-          <div class="portfolio-banner">
-            <h1>Portfolio</h1>
-          </div>
-          <div class="portfolio">
-            <section id="projects">
-              <article class="template" data-category="category">
-                <header>
-                  <h1>Title</h1>
-                  <a href="#" target="_blank" alt="title"><img src="screenshot" alt="category"></a>
-                  <div class="byline">
-                    <section class="colaborators"></section>
-                    <section class="dates">
-                      deplooyed: <time pubdate datetime="2000-01-01">Date of Deploy</time>
-                      <br>Live for <var></var> days.
-                    </section>
-                  </div>
-                </header>
-              <section class="description"></section>
-            </article>
+
+          <section id="about" class="tab-content"> <!-- template -->
+            <nav class="main-nav">
+
+              <ul>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-itemtab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+
+            <h1>About</h1>
+            <p>about William Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </section>
 
-          </div>
+          <section id="portfolio" class="tab-content"> <!-- template -->
+            <nav class="main-nav">
+
+              <ul>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-itemtab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+            <div class="portfolio-banner">
+              <h1>Portfolio</h1>
+            </div>
+            <div id="projects" class="template" data-category="category">
+              <a href="#" target="_blank" alt="title"><img src="screenshot" alt="category"></a>
+              <p class="live pull-right">Live for<br></p>
+              <h1>Title</h1>
+              <div class="byline">
+                <ul>
+                  <li>DEPLOYED ON<time pubdate=""></time></li>
+                  <li class="colaborators">TEAM MEMBERS</li>
+                  <li><em>MY ROLL</em></li>
+                </ul>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section id="resume" class="tab-content">
+            <nav class="main-nav">
+
+              <ul>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-itemtab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+          </section>
+          <section id="contact" class=".tab-content">
+            <nav class="main-nav">
+
+              <ul>
+               <li class="nav-menu-item tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+               <li class="nav-menu-item tab" data-content="portfolio"><a href="#" class="icon-books">PORTFOLIO</a></li>
+               <li class="nav-menu-itemtab" data-content="resume"><a href="#"class="icon-earth">RESUME</a></li>
+               <li class="nav-menu-item tab" data-content="contact"><a href="#" class="icon-envelop">CONTACT</a></li>
+              </ul>
+              <div class="mobile-menu">
+                <img src="img/menu.png" alt="where to?">
+              </div>
+            </nav>
+          </section>
+
         </main>
-        <footer class="clearfix">
-          <section class="copyright">
-            William Doglas Madden &copy
-          </section>
-          <div class="fix pull-right icon-envelop">
+
+        <footer class="">
+          <div class="site-map">
+            <ul>
+
+            </ul>
           </div>
+          <div class="copyright">
+            William Doglas Madden &copy
+          </div>
+
         </footer>
-    </div>
   </body>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="scripts/projects.js"></script>
-<script type="text/javascript" src="scripts/portfolio.js"></script>
+
+  <!-- Vendor Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+  <!-- Model Files -->
+<!-- <script type="text/javascript" src=/"scripts/projects.js"></script> -->
+<!-- leading slash added for serving from local file structure -->
+<script type="text/javascript" src="/scripts/models/portfolio.js"></script>
+<script type="text/javascript" src="/scripts/views/portfolioView.js"></script>
 
 </html>
