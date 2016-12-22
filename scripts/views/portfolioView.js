@@ -25,5 +25,4 @@ articleView.handleMainNav = function () {
   $('.main-nav .tab:first').click();
 };
 
-
 articleView.handleMainNav();
