@@ -26,3 +26,20 @@ articleView.handleMainNav = function () {
 };
 
 articleView.handleMainNav();
+
+var ourLocalData;
+$.ajax('/data/hackerIpsum.json', {
+  method: 'GET',
+  success: function (response){
+    console.log('success!');
+    ourLocalData = response;
+    // console.log('pre sort : ' + ourLocalData);
+    Project.prepareData();
+    console.log('projects: ' + Project.projects);
+
+  },
+  error: function (response){ //over 400
+    console.log('error!');
+    console.log(response);
+  }
+});
