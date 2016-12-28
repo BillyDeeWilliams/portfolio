@@ -1,29 +1,34 @@
 'use strict';
+(function(module){
 
 
-function Project (opts) {
-  // for (key in opts) {
-  //   this[key] = opts[key];
-  // }
-};
 
-Project.projects = [];
+  function Project (opts) {
+    for (key in opts) {
+      this[key] = opts[key];
+    }
+  };
 
-Project.prototype.toHtml = function() {
-  var source = $('#project-template').html();
-  var template = Handlebars.compile(source);
+  Project.projects = [];
 
-  var html = template(this);
+  Project.prototype.toHtml = function() {
+    var source = $('#project-template').html();
+    var template = Handlebars.compile(source);
 
-  return html;
-};
+    var html = template(this);
 
-Project.prepareData = function (){
-  ourLocalData.forEach(function(projectObject) {
-    Project.projects.push(new Project(projectObject));
-  });
+    return html;
+  };
 
-  Project.projects.forEach(function(ourNewProjectObject){
-    $('#projects').append(ourNewProjectObject.toHtml());
-  });
-};
+  Project.prepareData = function (){
+    Project.projects = ourLocalData.map(function(project) {
+      return new Project(project);
+    });
+
+    Project.projects.forEach(function(ourNewProjectObject){
+      $('#projects').append(ourNewProjectObject.toHtml());
+    });
+  };
+
+  module.Project = Project;
+})(window);
